@@ -22,6 +22,17 @@ function fizzBuzz(limit) {
 
     let textContent = getTextContent(isFizz, isBuzz, counter);
 
+    changeGhost(counter, isFizz, isBuzz, textContent);
+
+    counter++;
+  }
+
+  setTimeout(fizzBuzz, 750, limit);
+}
+
+fizzBuzz(limit);
+
+function changeGhost(counter, isFizz, isBuzz, textContent) {
     if (counter % 3 === 1) {
         changeBlackGhost(isFizz, isBuzz, textContent);
     } else if (counter % 3 === 2) {
@@ -29,15 +40,7 @@ function fizzBuzz(limit) {
     } else {
         changeWhiteGhost(isFizz, isBuzz, textContent);
     }
-
-    // console.log(`Counter: ${counter}\nisFizz: ${isFizz}\nisBuzz: ${isBuzz}`);
-    counter++;
-  }
-
-  setTimeout(fizzBuzz, 500, limit);
 }
-
-fizzBuzz(limit);
 
 function getTextContent(isFizz, isBuzz, counter) {
     if (!isFizz && !isBuzz) {
