@@ -1,0 +1,46 @@
+* {
+    text-align: center;
+    margin: auto;
+}
+
+.title {
+    background-color: lightsalmon;
+    padding: 2% 0px;
+}
+
+/* SLIDERS */
+.range-form {
+    background-color: lightcoral;
+    padding: 2% 0%;
+}
+
+/* GHOSTS */
+.ghost-section {
+    background-color: lightseagreen;
+    display: flex;
+}
+
+.ghost-container {
+    width: 30%;
+    position: relative;
+}
+
+.text {
+    position: absolute;
+    left: 5vw;
+    top: 10vw;
+    font-size: 4.5vw;
+
+}
+img {
+    width: 100%;
+    padding: 1.5%;
+}
+
+label {
+    display: block;
+}
+
+.bubble {
+    visibility: visible;
+}

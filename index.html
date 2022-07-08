@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FizzBuzz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <h1 class="title">FizzBuzz Game</h1>
+    
+        <form class="range-form">
+            <label>Adjust "fizz" rate: </label>
+            <input id="fizz-slider" type="range" min="2" max="4" value="3" step="1">
+            <label>Adjust "buzz" rate: </label>
+            <input id="buzz-slider" type="range" min="5" max="7" value="6" step="1">
+            <label>Adjust limit: </label>
+            <input id="limit-slider" type="range" min="10" max="50" value="30" step="1">
+        </form>
+    
+        <section class="ghost-section">
+            <div class="ghost-container ">
+                <p id="text1" class="text"></p>
+                <img class="bubble bubble1" src="/Images/speechBubble.png" alt="">
+                <img id="black-ghost" src="/Images/blackNumber.png" alt="">
+            </div>
+            <div class="ghost-container">
+                <p id="text2" class="text"></p>
+                <img class="bubble bubble2"src="/Images/speechBubble.png" alt="">
+                <img id="blue-ghost" src="/Images/blueNumber.png" alt="">
+            </div>
+            <div class="ghost-container">
+                <p id="text3" class="text"></p>
+                <img class="bubble bubble3"src="/Images/speechBubble.png" alt="">
+                <img id="white-ghost" src="/Images/whiteNumber.png" alt="">
+            </div>
+        </section>
+    </main>
+
+    <script src="index.js">console.log("Hello");</script>
+</body>
+</html>
